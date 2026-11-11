@@ -1,0 +1,7 @@
+id,titulo,categoria_predicha,confianza,terminos_principales
+nuevo_01.txt,Política de trabajo desde otro estado o país,recursos_humanos,0.316,"form remot, modalidad, compromet, cubr, colaborar, colaborador"
+nuevo_02.txt,Guía de correcciones urgentes en producción,desarrollo_software,0.331,"correccion, rama, version, desarrollador, produccion, cambi"
+nuevo_03.txt,Procedimiento para reportar una laptop perdida o robada,seguridad_informacion,0.258,"laptop, ocurri, robo, inmediat equip, indic, disc cifrad"
+nuevo_04.txt,Artículo: cómo desbloquear a un usuario que no puede entrar al portal,soporte_clientes,0.303,"administrador, usuari, portal, cuent, caus probabl, activar"
+nuevo_05.txt,Acta de la retrospectiva del sprint catorce,gestion_proyectos,0.339,"retrospectiv, scrum, scrum master, master, histori, planeacion"
+nuevo_06.txt,Reporte de capacidad del equipo de soporte para el cierre fiscal,soporte_clientes,0.341,"cancelacion, agent, ticket, pregunt frecuent, pregunt, reforzar"

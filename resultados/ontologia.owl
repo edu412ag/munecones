@@ -1,0 +1,837 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://novatech.example.org/ontologia.owl"
+         xmlns="http://novatech.example.org/ontologia.owl#">
+
+<owl:Ontology rdf:about="http://novatech.example.org/ontologia.owl"/>
+
+<owl:ObjectProperty rdf:about="#tiene_area">
+  <rdfs:domain rdf:resource="#Organizacion"/>
+  <rdfs:range rdf:resource="#AreaConocimiento"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#tiene_concepto">
+  <rdfs:domain rdf:resource="#AreaConocimiento"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#trata_sobre">
+  <rdfs:domain rdf:resource="#Documento"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#es_de_tipo">
+  <rdfs:domain rdf:resource="#Documento"/>
+  <rdfs:range rdf:resource="#TipoDocumento"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#clasificado_en">
+  <rdfs:domain rdf:resource="#Documento"/>
+  <rdfs:range rdf:resource="#AreaConocimiento"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#paga">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#orienta">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#refuerza">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#revisa">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#previene">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#mitiga">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#levanta">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#se_rige_por">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#se_escala_mediante">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#resuelve">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#enfrenta">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#produce">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#mejora">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#forma_parte_de">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#se_publica_mediante">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#valida">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#genera">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#sensibiliza_sobre">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#requiere">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#reduce_capacidad_de">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#enriquece">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#se_construye_con">
+  <rdfs:domain rdf:resource="#Concepto"/>
+  <rdfs:range rdf:resource="#Concepto"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Organizacion">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#AreaConocimiento">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Concepto">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#TipoDocumento">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Documento">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#NovaTech_Soluciones">
+  <rdf:type rdf:resource="#Organizacion"/>
+  <tiene_area rdf:resource="#recursos_humanos"/>
+  <tiene_area rdf:resource="#seguridad_informacion"/>
+  <tiene_area rdf:resource="#soporte_clientes"/>
+  <tiene_area rdf:resource="#gestion_proyectos"/>
+  <tiene_area rdf:resource="#desarrollo_software"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos">
+  <rdf:type rdf:resource="#AreaConocimiento"/>
+  <tiene_concepto rdf:resource="#Vacaciones"/>
+  <tiene_concepto rdf:resource="#Teletrabajo"/>
+  <tiene_concepto rdf:resource="#Capacitacion"/>
+  <tiene_concepto rdf:resource="#Talento"/>
+  <tiene_concepto rdf:resource="#Nomina"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Vacaciones">
+  <rdf:type rdf:resource="#Concepto"/>
+  <reduce_capacidad_de rdf:resource="#Scrum"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Teletrabajo">
+  <rdf:type rdf:resource="#Concepto"/>
+  <requiere rdf:resource="#ControlAccesos"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Capacitacion">
+  <rdf:type rdf:resource="#Concepto"/>
+  <sensibiliza_sobre rdf:resource="#Incidente"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Talento">
+  <rdf:type rdf:resource="#Concepto"/>
+  <orienta rdf:resource="#Capacitacion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Nomina">
+  <rdf:type rdf:resource="#Concepto"/>
+  <paga rdf:resource="#Vacaciones"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion">
+  <rdf:type rdf:resource="#AreaConocimiento"/>
+  <tiene_concepto rdf:resource="#Contrasena"/>
+  <tiene_concepto rdf:resource="#ControlAccesos"/>
+  <tiene_concepto rdf:resource="#Auditoria"/>
+  <tiene_concepto rdf:resource="#Incidente"/>
+  <tiene_concepto rdf:resource="#Respaldo"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Contrasena">
+  <rdf:type rdf:resource="#Concepto"/>
+  <refuerza rdf:resource="#ControlAccesos"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ControlAccesos">
+  <rdf:type rdf:resource="#Concepto"/>
+  <previene rdf:resource="#Incidente"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Auditoria">
+  <rdf:type rdf:resource="#Concepto"/>
+  <revisa rdf:resource="#ControlAccesos"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Incidente">
+  <rdf:type rdf:resource="#Concepto"/>
+  <genera rdf:resource="#Ticket"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Respaldo">
+  <rdf:type rdf:resource="#Concepto"/>
+  <mitiga rdf:resource="#Incidente"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes">
+  <rdf:type rdf:resource="#AreaConocimiento"/>
+  <tiene_concepto rdf:resource="#Ticket"/>
+  <tiene_concepto rdf:resource="#Cliente"/>
+  <tiene_concepto rdf:resource="#SLA"/>
+  <tiene_concepto rdf:resource="#Escalamiento"/>
+  <tiene_concepto rdf:resource="#BaseConocimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ticket">
+  <rdf:type rdf:resource="#Concepto"/>
+  <se_rige_por rdf:resource="#SLA"/>
+  <se_escala_mediante rdf:resource="#Escalamiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cliente">
+  <rdf:type rdf:resource="#Concepto"/>
+  <levanta rdf:resource="#Ticket"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#SLA">
+  <rdf:type rdf:resource="#Concepto"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Escalamiento">
+  <rdf:type rdf:resource="#Concepto"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BaseConocimiento">
+  <rdf:type rdf:resource="#Concepto"/>
+  <resuelve rdf:resource="#Ticket"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos">
+  <rdf:type rdf:resource="#AreaConocimiento"/>
+  <tiene_concepto rdf:resource="#LeccionAprendida"/>
+  <tiene_concepto rdf:resource="#Proyecto"/>
+  <tiene_concepto rdf:resource="#Riesgo"/>
+  <tiene_concepto rdf:resource="#Entregable"/>
+  <tiene_concepto rdf:resource="#Scrum"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LeccionAprendida">
+  <rdf:type rdf:resource="#Concepto"/>
+  <mejora rdf:resource="#Proyecto"/>
+  <enriquece rdf:resource="#BaseConocimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Proyecto">
+  <rdf:type rdf:resource="#Concepto"/>
+  <enfrenta rdf:resource="#Riesgo"/>
+  <produce rdf:resource="#Entregable"/>
+  <se_construye_con rdf:resource="#Codigo"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Riesgo">
+  <rdf:type rdf:resource="#Concepto"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Entregable">
+  <rdf:type rdf:resource="#Concepto"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Scrum">
+  <rdf:type rdf:resource="#Concepto"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software">
+  <rdf:type rdf:resource="#AreaConocimiento"/>
+  <tiene_concepto rdf:resource="#Codigo"/>
+  <tiene_concepto rdf:resource="#API"/>
+  <tiene_concepto rdf:resource="#Arquitectura"/>
+  <tiene_concepto rdf:resource="#Despliegue"/>
+  <tiene_concepto rdf:resource="#Pruebas"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Codigo">
+  <rdf:type rdf:resource="#Concepto"/>
+  <se_publica_mediante rdf:resource="#Despliegue"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#API">
+  <rdf:type rdf:resource="#Concepto"/>
+  <forma_parte_de rdf:resource="#Arquitectura"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Arquitectura">
+  <rdf:type rdf:resource="#Concepto"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Despliegue">
+  <rdf:type rdf:resource="#Concepto"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pruebas">
+  <rdf:type rdf:resource="#Concepto"/>
+  <valida rdf:resource="#Despliegue"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Politica">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Manual">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Procedimiento">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Guia">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Reporte">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Acta">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Plantilla">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Estandar">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Plan">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Articulo">
+  <rdf:type rdf:resource="#TipoDocumento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_estandar_codigo_frontend">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#Codigo"/>
+  <trata_sobre rdf:resource="#Arquitectura"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Estandar"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_estandar_codigo_python">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#Codigo"/>
+  <es_de_tipo rdf:resource="#Estandar"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_guia_arquitectura_saas">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#API"/>
+  <trata_sobre rdf:resource="#Arquitectura"/>
+  <es_de_tipo rdf:resource="#Guia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_guia_documentacion_api">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#API"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Riesgo"/>
+  <es_de_tipo rdf:resource="#Guia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_guia_revision_codigo">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#Codigo"/>
+  <trata_sobre rdf:resource="#Despliegue"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Guia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_manual_apps_moviles">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#Codigo"/>
+  <trata_sobre rdf:resource="#API"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <es_de_tipo rdf:resource="#Manual"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_manual_despliegue_cicd">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#Despliegue"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Manual"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_plan_estrategia_pruebas">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#Despliegue"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Plan"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_procedimiento_gestion_ramas">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#Codigo"/>
+  <es_de_tipo rdf:resource="#Procedimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#desarrollo_software_reporte_deuda_tecnica">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#desarrollo_software"/>
+  <trata_sobre rdf:resource="#Codigo"/>
+  <trata_sobre rdf:resource="#API"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <trata_sobre rdf:resource="#Scrum"/>
+  <es_de_tipo rdf:resource="#Reporte"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_acta_constitucion_proyecto">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Riesgo"/>
+  <trata_sobre rdf:resource="#Capacitacion"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Acta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_acta_planeacion_sprint">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#Scrum"/>
+  <trata_sobre rdf:resource="#Vacaciones"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#API"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Acta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_guia_estimacion_planeacion">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Riesgo"/>
+  <trata_sobre rdf:resource="#Entregable"/>
+  <trata_sobre rdf:resource="#Scrum"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Guia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_manual_metodologia_scrum">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#LeccionAprendida"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Scrum"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Manual"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_plan_comunicacion_proyecto">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Riesgo"/>
+  <trata_sobre rdf:resource="#Scrum"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Plan"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_plantilla_reporte_avance">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Riesgo"/>
+  <trata_sobre rdf:resource="#Entregable"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Plantilla"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_procedimiento_cierre_proyecto">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#LeccionAprendida"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Entregable"/>
+  <trata_sobre rdf:resource="#ControlAccesos"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Procedimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_procedimiento_gestion_riesgos">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Riesgo"/>
+  <trata_sobre rdf:resource="#Escalamiento"/>
+  <es_de_tipo rdf:resource="#Procedimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_reporte_cartera_proyectos">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Riesgo"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Reporte"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gestion_proyectos_reporte_lecciones_aprendidas">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#gestion_proyectos"/>
+  <trata_sobre rdf:resource="#LeccionAprendida"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Reporte"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_acta_comite_clima_laboral">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Teletrabajo"/>
+  <trata_sobre rdf:resource="#Talento"/>
+  <es_de_tipo rdf:resource="#Acta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_guia_reclutamiento_seleccion">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Talento"/>
+  <es_de_tipo rdf:resource="#Guia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_manual_induccion">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Capacitacion"/>
+  <trata_sobre rdf:resource="#Talento"/>
+  <es_de_tipo rdf:resource="#Manual"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_manual_nomina_prestaciones">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Nomina"/>
+  <es_de_tipo rdf:resource="#Manual"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_plan_capacitacion_anual">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Capacitacion"/>
+  <trata_sobre rdf:resource="#Talento"/>
+  <es_de_tipo rdf:resource="#Plan"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_politica_codigo_conducta">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Capacitacion"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Codigo"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_politica_home_office">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Teletrabajo"/>
+  <trata_sobre rdf:resource="#ControlAccesos"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_politica_permisos_incapacidades">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Vacaciones"/>
+  <trata_sobre rdf:resource="#Nomina"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_politica_vacaciones">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Vacaciones"/>
+  <trata_sobre rdf:resource="#Nomina"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Scrum"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#recursos_humanos_procedimiento_evaluacion_desempeno">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#recursos_humanos"/>
+  <trata_sobre rdf:resource="#Capacitacion"/>
+  <trata_sobre rdf:resource="#Talento"/>
+  <es_de_tipo rdf:resource="#Procedimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_guia_phishing">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Contrasena"/>
+  <trata_sobre rdf:resource="#Incidente"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Guia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_manual_gestion_vulnerabilidades">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Auditoria"/>
+  <trata_sobre rdf:resource="#Arquitectura"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Manual"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_plan_auditoria_interna">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Auditoria"/>
+  <trata_sobre rdf:resource="#Respaldo"/>
+  <trata_sobre rdf:resource="#Capacitacion"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Plan"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_politica_clasificacion_informacion">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Codigo"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_politica_contrasenas">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Contrasena"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_politica_control_accesos">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Contrasena"/>
+  <trata_sobre rdf:resource="#ControlAccesos"/>
+  <trata_sobre rdf:resource="#Vacaciones"/>
+  <trata_sobre rdf:resource="#Teletrabajo"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_politica_dispositivos_remotos">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Contrasena"/>
+  <trata_sobre rdf:resource="#ControlAccesos"/>
+  <trata_sobre rdf:resource="#Teletrabajo"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_politica_respaldos">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Respaldo"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_procedimiento_respuesta_incidentes">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Incidente"/>
+  <trata_sobre rdf:resource="#Respaldo"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Procedimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#seguridad_informacion_reporte_incidente_acceso">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#seguridad_informacion"/>
+  <trata_sobre rdf:resource="#Contrasena"/>
+  <trata_sobre rdf:resource="#ControlAccesos"/>
+  <trata_sobre rdf:resource="#Incidente"/>
+  <trata_sobre rdf:resource="#Respaldo"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Reporte"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_articulo_kb_error_timbrado">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Ticket"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#BaseConocimiento"/>
+  <trata_sobre rdf:resource="#Contrasena"/>
+  <es_de_tipo rdf:resource="#Articulo"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_guia_atencion_clientes">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Ticket"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Escalamiento"/>
+  <es_de_tipo rdf:resource="#Guia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_guia_preguntas_frecuentes">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Ticket"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#BaseConocimiento"/>
+  <trata_sobre rdf:resource="#Vacaciones"/>
+  <trata_sobre rdf:resource="#Contrasena"/>
+  <es_de_tipo rdf:resource="#Guia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_manual_usuario_inventarios">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Manual"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_plantilla_respuestas_clientes">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Ticket"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <es_de_tipo rdf:resource="#Plantilla"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_politica_planes_soporte">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Proyecto"/>
+  <trata_sobre rdf:resource="#Pruebas"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_politica_sla">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Ticket"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#SLA"/>
+  <es_de_tipo rdf:resource="#Politica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_procedimiento_escalamiento">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Ticket"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#SLA"/>
+  <trata_sobre rdf:resource="#Escalamiento"/>
+  <es_de_tipo rdf:resource="#Procedimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_procedimiento_tickets">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Ticket"/>
+  <trata_sobre rdf:resource="#Cliente"/>
+  <trata_sobre rdf:resource="#Escalamiento"/>
+  <trata_sobre rdf:resource="#BaseConocimiento"/>
+  <es_de_tipo rdf:resource="#Procedimiento"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soporte_clientes_reporte_satisfaccion_soporte">
+  <rdf:type rdf:resource="#Documento"/>
+  <clasificado_en rdf:resource="#soporte_clientes"/>
+  <trata_sobre rdf:resource="#Ticket"/>
+  <trata_sobre rdf:resource="#SLA"/>
+  <trata_sobre rdf:resource="#BaseConocimiento"/>
+  <trata_sobre rdf:resource="#Talento"/>
+  <es_de_tipo rdf:resource="#Reporte"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

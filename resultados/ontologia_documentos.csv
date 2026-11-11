@@ -1,0 +1,51 @@
+documento,area,tipo,conceptos
+desarrollo_software/estandar_codigo_frontend.txt,desarrollo_software,Estandar,Codigo; Arquitectura; Pruebas; Cliente
+desarrollo_software/estandar_codigo_python.txt,desarrollo_software,Estandar,Codigo
+desarrollo_software/guia_arquitectura_saas.txt,desarrollo_software,Guia,API; Arquitectura
+desarrollo_software/guia_documentacion_api.txt,desarrollo_software,Guia,API; Pruebas; Cliente; Riesgo
+desarrollo_software/guia_revision_codigo.txt,desarrollo_software,Guia,Codigo; Despliegue; Pruebas
+desarrollo_software/manual_apps_moviles.txt,desarrollo_software,Manual,Codigo; API; Pruebas; Cliente; Proyecto
+desarrollo_software/manual_despliegue_cicd.txt,desarrollo_software,Manual,Despliegue; Pruebas
+desarrollo_software/plan_estrategia_pruebas.txt,desarrollo_software,Plan,Despliegue; Pruebas
+desarrollo_software/procedimiento_gestion_ramas.txt,desarrollo_software,Procedimiento,Codigo
+desarrollo_software/reporte_deuda_tecnica.txt,desarrollo_software,Reporte,Codigo; API; Pruebas; Scrum
+gestion_proyectos/acta_constitucion_proyecto.txt,gestion_proyectos,Acta,Proyecto; Riesgo; Capacitacion; Cliente
+gestion_proyectos/acta_planeacion_sprint.txt,gestion_proyectos,Acta,Scrum; Vacaciones; Cliente; API; Pruebas
+gestion_proyectos/guia_estimacion_planeacion.txt,gestion_proyectos,Guia,Proyecto; Riesgo; Entregable; Scrum; Cliente
+gestion_proyectos/manual_metodologia_scrum.txt,gestion_proyectos,Manual,LeccionAprendida; Proyecto; Scrum; Cliente
+gestion_proyectos/plan_comunicacion_proyecto.txt,gestion_proyectos,Plan,Proyecto; Riesgo; Scrum; Cliente
+gestion_proyectos/plantilla_reporte_avance.txt,gestion_proyectos,Plantilla,Proyecto; Riesgo; Entregable; Cliente
+gestion_proyectos/procedimiento_cierre_proyecto.txt,gestion_proyectos,Procedimiento,LeccionAprendida; Proyecto; Entregable; ControlAccesos; Cliente
+gestion_proyectos/procedimiento_gestion_riesgos.txt,gestion_proyectos,Procedimiento,Proyecto; Riesgo; Escalamiento
+gestion_proyectos/reporte_cartera_proyectos.txt,gestion_proyectos,Reporte,Proyecto; Riesgo; Cliente
+gestion_proyectos/reporte_lecciones_aprendidas.txt,gestion_proyectos,Reporte,LeccionAprendida; Proyecto; Cliente; Pruebas
+recursos_humanos/acta_comite_clima_laboral.txt,recursos_humanos,Acta,Teletrabajo; Talento
+recursos_humanos/guia_reclutamiento_seleccion.txt,recursos_humanos,Guia,Talento
+recursos_humanos/manual_induccion.txt,recursos_humanos,Manual,Capacitacion; Talento
+recursos_humanos/manual_nomina_prestaciones.txt,recursos_humanos,Manual,Nomina
+recursos_humanos/plan_capacitacion_anual.txt,recursos_humanos,Plan,Capacitacion; Talento
+recursos_humanos/politica_codigo_conducta.txt,recursos_humanos,Politica,Capacitacion; Cliente; Codigo
+recursos_humanos/politica_home_office.txt,recursos_humanos,Politica,Teletrabajo; ControlAccesos
+recursos_humanos/politica_permisos_incapacidades.txt,recursos_humanos,Politica,Vacaciones; Nomina
+recursos_humanos/politica_vacaciones.txt,recursos_humanos,Politica,Vacaciones; Nomina; Proyecto; Scrum
+recursos_humanos/procedimiento_evaluacion_desempeno.txt,recursos_humanos,Procedimiento,Capacitacion; Talento
+seguridad_informacion/guia_phishing.txt,seguridad_informacion,Guia,Contrasena; Incidente; Cliente
+seguridad_informacion/manual_gestion_vulnerabilidades.txt,seguridad_informacion,Manual,Auditoria; Arquitectura; Pruebas
+seguridad_informacion/plan_auditoria_interna.txt,seguridad_informacion,Plan,Auditoria; Respaldo; Capacitacion; Cliente; Pruebas
+seguridad_informacion/politica_clasificacion_informacion.txt,seguridad_informacion,Politica,Cliente; Codigo
+seguridad_informacion/politica_contrasenas.txt,seguridad_informacion,Politica,Contrasena
+seguridad_informacion/politica_control_accesos.txt,seguridad_informacion,Politica,Contrasena; ControlAccesos; Vacaciones; Teletrabajo
+seguridad_informacion/politica_dispositivos_remotos.txt,seguridad_informacion,Politica,Contrasena; ControlAccesos; Teletrabajo
+seguridad_informacion/politica_respaldos.txt,seguridad_informacion,Politica,Respaldo; Pruebas
+seguridad_informacion/procedimiento_respuesta_incidentes.txt,seguridad_informacion,Procedimiento,Incidente; Respaldo; Cliente
+seguridad_informacion/reporte_incidente_acceso.txt,seguridad_informacion,Reporte,Contrasena; ControlAccesos; Incidente; Respaldo; Pruebas
+soporte_clientes/articulo_kb_error_timbrado.txt,soporte_clientes,Articulo,Ticket; Cliente; BaseConocimiento; Contrasena
+soporte_clientes/guia_atencion_clientes.txt,soporte_clientes,Guia,Ticket; Cliente; Escalamiento
+soporte_clientes/guia_preguntas_frecuentes.txt,soporte_clientes,Guia,Ticket; Cliente; BaseConocimiento; Vacaciones; Contrasena
+soporte_clientes/manual_usuario_inventarios.txt,soporte_clientes,Manual,Cliente
+soporte_clientes/plantilla_respuestas_clientes.txt,soporte_clientes,Plantilla,Ticket; Cliente
+soporte_clientes/politica_planes_soporte.txt,soporte_clientes,Politica,Cliente; Proyecto; Pruebas
+soporte_clientes/politica_sla.txt,soporte_clientes,Politica,Ticket; Cliente; SLA
+soporte_clientes/procedimiento_escalamiento.txt,soporte_clientes,Procedimiento,Ticket; Cliente; SLA; Escalamiento
+soporte_clientes/procedimiento_tickets.txt,soporte_clientes,Procedimiento,Ticket; Cliente; Escalamiento; BaseConocimiento
+soporte_clientes/reporte_satisfaccion_soporte.txt,soporte_clientes,Reporte,Ticket; SLA; BaseConocimiento; Talento

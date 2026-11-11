@@ -1,0 +1,6 @@
+clase,descripcion,ejemplos
+Organizacion,La empresa,NovaTech Soluciones
+AreaConocimiento,Área que agrupa el conocimiento (categoría del modelo),"Recursos Humanos, Seguridad de la Información, Soporte a Clientes, Gestión de Proyectos, Desarrollo de Software"
+Concepto,Sustantivo clave del negocio (5 por área),"Vacaciones, Teletrabajo, Capacitacion, Talento, Nomina, Contrasena, ControlAccesos, Auditoria, Incidente, Respaldo, Ticket, Cliente, SLA, Escalamiento, BaseConocimiento, LeccionAprendida, Proyecto, Riesgo, Entregable, Scrum, Codigo, API, Arquitectura, Despliegue, Pruebas"
+TipoDocumento,Forma del documento,"Politica, Manual, Procedimiento, Guia, Reporte, Acta, Plantilla, Estandar, Plan, Articulo"
+Documento,Archivo de conocimiento (.txt),50 documentos

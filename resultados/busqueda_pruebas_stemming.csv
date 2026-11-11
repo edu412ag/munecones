@@ -1,0 +1,7 @@
+consulta,categoria_esperada,top1_id,top1_titulo,top1_categoria,similitud,acierto
+¿cuántos días de anticipación necesito para pedir vacaciones?,recursos_humanos,recursos_humanos/politica_vacaciones.txt,Política de vacaciones,recursos_humanos,0.1938,True
+cómo se despliega una nueva versión a producción,desarrollo_software,desarrollo_software/guia_documentacion_api.txt,Guía de documentación de la API de facturación,desarrollo_software,0.1247,True
+qué hago si recibo un correo sospechoso,seguridad_informacion,seguridad_informacion/guia_phishing.txt,Guía para identificar correos de phishing,seguridad_informacion,0.1816,True
+cuánto tiempo tengo para responder a un ticket crítico,soporte_clientes,soporte_clientes/plantilla_respuestas_clientes.txt,Plantilla de respuestas a clientes para tickets,soporte_clientes,0.1132,True
+cómo se registran y se mitigan los riesgos de un proyecto,gestion_proyectos,gestion_proyectos/procedimiento_gestion_riesgos.txt,Procedimiento de gestión de riesgos de proyecto,gestion_proyectos,0.2096,True
+mi computadora se infectó con un virus,seguridad_informacion,(sin coincidencias),,,0.0,False

@@ -1,0 +1,3 @@
+modelo,exactitud_prueba,cv_media,cv_desv
+Naive Bayes,0.8,0.9,0.063
+Regresión Logística,0.867,0.92,0.075

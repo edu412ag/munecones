@@ -1,0 +1,5 @@
+id,titulo,categoria_real,categoria_predicha,terminos_principales
+desarrollo_software/guia_documentacion_api.txt,Guía de documentación de la API de facturación,desarrollo_software,soporte_clientes,"api, facturacion, endpoint describe, codigos error, respuesta codigos, codigos"
+seguridad_informacion/manual_gestion_vulnerabilidades.txt,Manual de gestión de vulnerabilidades y parches,seguridad_informacion,desarrollo_software,"vulnerabilidades, parches, prueba, altas treinta, conocidas, conocidas hallazgos"
+soporte_clientes/manual_usuario_inventarios.txt,Manual de usuario del módulo de inventarios,soporte_clientes,desarrollo_software,"modulo inventarios, movimientos, modulo, inventarios, sistema, ajustes"
+soporte_clientes/politica_planes_soporte.txt,Política de planes de soporte y garantía para software a la medida,soporte_clientes,desarrollo_software,"planes soporte, planes, software, garantia, horario, medida"

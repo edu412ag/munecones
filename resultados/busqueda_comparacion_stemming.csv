@@ -1,0 +1,7 @@
+consulta,similitud_sin,acierto_sin,similitud_con,acierto_con
+¿cuántos días de anticipación necesito para pedir vacaciones?,0.2101,True,0.1938,True
+cómo se despliega una nueva versión a producción,0.1366,True,0.1247,True
+qué hago si recibo un correo sospechoso,0.1198,True,0.1816,True
+cuánto tiempo tengo para responder a un ticket crítico,0.0893,True,0.1132,True
+cómo se registran y se mitigan los riesgos de un proyecto,0.1963,True,0.2096,True
+mi computadora se infectó con un virus,0.0,False,0.0,False
